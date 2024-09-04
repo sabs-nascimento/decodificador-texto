@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/arquivo-html-ic.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <title>Decodificador de Texto</title>
+    </head>
+    <body>
+        <main class="decodificador">
+            <img class="logo" src="./img/arquivo-html.png" alt="Desenho de um arquivo html">
+            <section class="container__texto__decodificador">
+                <textarea name="input__texto" id="input__texto" rows="13" cols="45" placeholder="Digite seu texto" spellcheck="false" required></textarea>
+                <p class="aviso__texto"><img src="./img/bi_exclamation-circle-fill.png" alt="Ponto de exclamação">Apenas letras minúsculas e sem acento.</p>
+                <div class="container__texto__botoes">
+                    <button onclick="criptografar()" type="button" class="container__botao__cheio">Criptografar</button>
+                    <button onclick="descriptografar()" type="button" class="container__botao">Descriptografar</button>
+                </div>
+            </section>
+            <section class="container__texto__resultado">
+                <div class="mensagem__inicial" id="mensagem__inicial">
+                <img class="busca" src="./img/search.png" alt="Lupa procurando dados em um computador">
+                <p class="mensagem"><strong>Nenhuma mensagem encontrada</strong></p>
+                <p class="instrucao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <textarea readonly name="resultado__texto" id="resultado__texto" rows="22" cols="34"></textarea>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por <strong>Sabrina Santos</strong></p>
+            <div class="creditos__links">
+                <p>Ícones usados na aplicação</p>
+                <a class="link__credito" href="https://www.flaticon.com/br/icones-gratis/codigo" title="código ícones">Code icons created by juicy_fish - Flaticon</a>
+                <a class="link__credito" href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Freepik - Flaticon</a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/app.js"></script>
+    </body>
+</html>
